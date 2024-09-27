@@ -157,7 +157,7 @@ footer {
     margin-top: 40px;
 }
 /* Media Queries for iPhone screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
         header .logo img {
             width: 150px; /* Further reduction for smaller screens */
         }
