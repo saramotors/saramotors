@@ -171,11 +171,16 @@ footer {
             font-size: 2em;
         }
     
+       
         #hero p {
-            font-size: 1.2em;
+            font-size: 0.5em;
             letter-spacing: 1px;
         }
-    
+        #hero .btn {
+            padding: 5px 10px;
+            font-size: 0.5em;
+            font-weight: normal;
+        }
         form {
         max-width: 100%;
         }
