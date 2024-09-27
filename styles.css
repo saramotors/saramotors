@@ -25,7 +25,7 @@ header {
 }
 
 header .logo img {
-    width: 300px;
+    width: 200px;
 }
 /* 
 nav ul {
@@ -51,7 +51,7 @@ nav ul li a:hover {
 #hero {
     background: url('images/028-2023-Ford-F350-Super-Duty-road-action.avif') no-repeat center center/cover;
     color: rgb(255, 255, 255);
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 #hero p {
@@ -68,7 +68,7 @@ nav ul li a:hover {
     background-color: #33333391;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     padding: 10px 0;
 }
 
@@ -91,23 +91,23 @@ nav ul li a:hover {
 }
 
 section {
-    margin: 40px ;
+    margin: 20px ;
 }
 
 h2 {
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
 }
 
 form {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 20px auto;
     background-color: rgba(74, 73, 73, 0.413);
     padding: 20px;
@@ -156,3 +156,30 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+/* Media Queries for iPhone screens */
+@media screen and (max-width: 768px) {
+        header .logo img {
+            width: 150px; /* Further reduction for smaller screens */
+        }
+    
+        #hero {
+            height: 300px; /* Adjusted for smaller screens */
+        }
+    
+        #hero h1 {
+            font-size: 2em;
+        }
+    
+        #hero p {
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+    
+        form {
+        max-width: 100%;
+        }
+    
+        h2 {
+            font-size: 1.5em;
+        }
+    }
