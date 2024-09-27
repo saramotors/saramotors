@@ -164,6 +164,7 @@ footer {
     
         #hero {
             height: 300px; /* Adjusted for smaller screens */
+            background-size: contain;
         }
     
         #hero h1 {
