@@ -6,6 +6,7 @@
     <meta name="description" content="SARA MOTORS LLC, a trusted motor carrier company specializing in car hauling.">
     <title>SARA MOTORS - Car Hauling Specialists</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,94 +15,144 @@
                 <!-- Place your logo here -->
                 <img src="images/SARAmotors.png" alt="SARA MOTORS LLC Logo" />
             </div>
-            <!-- <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav> -->
-            </div>
+        </div>
     </header>
+    <body class="bg-gray-100 text-gray-800">
+        
+        
+            <!-- Hero Section -->
+              <section id="hero">
+          <div class="container">
+              <p>YOUR TRUSTED CARRIER COMPANY SPECIALIZING IN CAR HAULING.</p>
+              <br>
+              <br>
+              <button id="getInTouch" class="bg-red-600 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-l">GET IN TOUCH</button>
+          </div>
+      </section>
+        
+<!-- About Us Section -->
+<section id="about" class="py-16 bg-gray-100 text-gray-800 shadow-inner">
+      <div class="relative">
+          <!-- Top Divider -->
+          <div class="absolute top-0 left-0 w-full h-6 bg-gray-900"></div>
+  
+          <div class="container mx-auto px-4 text-center relative z-10">
+              <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-8">About Us</h2>
+              <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-6">
+                  At <strong>SARA MOTORS LLC</strong>, we pride ourselves on providing reliable and efficient car hauling services across the nation. With years of experience and a commitment to customer satisfaction, we ensure your vehicles are transported safely and securely.
+              </p>
+  
+              <!-- Location Section in a Frame -->
+              <div class="mt-10 max-w-md mx-auto text-center bg-white rounded-lg shadow-md p-6 border border-gray-200">
+                  <h3 class="text-xl font-semibold text-gray-700 mb-4">We Are Located At:</h3>
+                  <p class="text-black-600 leading-relaxed">
+                      100 N Howard St Ste W </p>
+  <p class="text-black-600">                    Spokane, WA 99201
+  </p>
+                  </p>
+                  <p class="text-lg font-bold text-gray-700 mt-4">
+                      USDOT: 4228589 | MC: 1635592
+                  </p>
+              </div>
+          </div>
+  
+          <!-- Bottom Divider -->
+          <div class="absolute bottom-0 left-0 w-full h-6 bg-gray-900"></div>
+      </div>
+  </section>
+    
 
-    <section id="hero">
-        <div class="container">
-            <p>YOUR TRUSTED CARRIER COMPANY SPECIALIZING IN CAR HAULING.</p>
-            <br>
-            <br>
-            <a href="#contact" class="btn">GET IN TOUCH</a>
-        </div>
-    </section>
+    
+     
+<section id="contact" class="py-16 bg-gray-900 text-gray-200">
+<div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+  <div class="container mx-auto ">
+    <div class="max-w-xl mx-auto my-10 bg-gray-500 p-5 rounded-md shadow-sm">
+      <div class="text-center">
+        <h1 class="my-3 text-4xl font-semibold text-black dark:text-gray-200">
+          Contact Us
+        </h1>
+        <p class="text-white dark:text-gray-400">
+          Fill up the form below to send us a message.
+        </p>
+      </div>
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+          <input type="hidden" name="access_key" value="aee0197c-84a3-4d4c-966c-554316507627" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At SARA MOTORS LLC, we pride ourselves on providing reliable and efficient car hauling services across the nation. With years of experience and a commitment to customer satisfaction, we ensure that your vehicles are transported safely and securely.</p>
-            <br>
-            <br>
-            <p>We are located at:</p>
-            <br>
-            <p>100 N Howard St Ste W,<br>Spokane, WA 99201</p>
-            <br>
-            <p><strong> USDOT: 4228589 | MC: 1635592</strong></p>
-        </div>
-
-        </div>
-    </section>
-<!-- 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p>We offer top-notch car hauling services, ensuring that your vehicles are transported with the utmost care and efficiency.</p>
-        </div>
-    </section> -->
-
-    <section id="contact">
-        <div class="container">
-            <h2>CONTACT US</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" optional>
-                </div> 
-                 <div class="form-group">
-                    <div class="checkbox-wrapper-29">
-                        <label class="checkbox">
-                          <input type="checkbox" class="checkbox__input" />  
-                          <span class="checkbox__label"></span>
-                        </label>
-                &nbsp; &nbsp; &nbsp;    By clicking this box, you agree to receive text messages from SARA MOTORS at the phone number provided above. I understand I will receive [X] messages per month. Data rates may apply. Text HELP to 509-590-1854 for assistance, or reply STOP to opt-out.
-                </div>
+          <div class="flex mb-6 space-x-4">
+            <div class="w-full md:w-1/2">
+              <label for="fname" class="block mb-2 text-sm text-gray-100 dark:text-gray-400">First Name</label>
+              <input type="text" name="name" id="first_name" placeholder="John" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+         
             </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                    <button type="submit" class="btn">SUBMIT</button>
-            </form>
+            <div class="w-full md:w-1/2">
+              <label for="lname" class="block mb-2 text-sm text-gray-100 dark:text-gray-400">Last Name</label>
+              <input type="text" name="last_name" id="lname" placeholder="Doe" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+            
+            </div>
+          </div>
 
-            <p>If you have any inquiries or would like to request our car hauling services, feel free to reach out to us:</p>
-            <p><strong>Phone:</strong> 509-590-1854</p>
-            <p><strong>Email:</strong> <a href="mailto:saramotorsllc@gmail.com">saramotorsllc@gmail.com</a></p>
+          <div class="flex mb-6 space-x-4">
+            <div class="w-full md:w-1/2">
+              <label for="email" class="block mb-2 text-sm text-gray-100 dark:text-gray-400">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+             
+            
+            </div>
 
-            <p>
+            <div class="w-full md:w-1/2">
+              <label for="phone" class="block text-sm mb-2 text-gray-100 dark:text-gray-400">Phone Number</label>
+              <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-wrapper-29">
+                <label class="checkbox">
+                  <input type="checkbox" class="checkbox__input" />  
+                  <span class="checkbox__label"></span>
+                </label>
+                <p class="checkbox-text text-sm mb-2 text-gray-100">
+        &nbsp; &nbsp; &nbsp;    By clicking this box, you agree to receive text messages from SARA MOTORS at the phone number provided above. I understand messages frequency may vary based on user interaction. Data rates may apply. Text HELP to 509-590-1854 for assistance, or reply STOP to opt-out.
+      </p>  
+      </div>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-m text-black dark:text-gray-400">Your Message</label>
+
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
+           
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="w-full px-3 py-4 text-white bg-red-500 rounded-md focus:bg-red-800 focus:outline-none">
+          <strong>SUBMIT</strong>    
+            </button>
+          </div>
+          <div id="result" class="text-center mt-6"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </section>
+
+            <p class="mb-2 text-center">If you have any inquiries or would like to request our car hauling services, feel free to reach out to us:</p>
+            <p class="text-center"><strong>Phone:</strong> 509-590-1854</p>
+            <p class="text-center"><strong>Email:</strong> <a href="mailto:saramotorsllc@gmail.com">saramotorsllc@gmail.com</a></p>
+
+            
           
     </section>
     <footer>
         <p>&copy; 2024 Sara Motors. All rights reserved.</p>
         <ul>
             <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
-            <li><a href="sms-terms.html" class="footer-link">SMS Terms & Conditions</a></li>
+            <li><a href="sms-terms.html" class="footer-link">Terms & Conditions</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
